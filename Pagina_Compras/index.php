@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="css/estiloGeneral.css">
     <link rel="stylesheet" href="css/estiloFormulario.css">
+    <link rel="stylesheet" href="css/estiloTabla.css">
 
     <title>Tecnolandia</title>
 </head>
@@ -92,9 +93,30 @@
 
             </form>
         </div>
+
+        <div class="tabla_productos">
+            <div class="fila_principal">
+                <p>Codigo</p>
+                <p>Nombre del producto</p>
+                <p>Precio</p>
+                <p>Proveedor</p>
+                <p></p>
+            </div>
+            
+            <?php include("php/mostrarProductos.php"); ?>
+
+            <div class="informacion-proveedor" id="informacion-proveedor"></div>
+
+            <div class="info-ventas" id="info-ventas">
+                <button id="cerrar-ventas" style="float:right;">X</button>
+                <div class="contenido-ventas" id="contenido-ventas"></div>
+            </div>
+        </div>
     </main>
 
     <script src="js/formulario.js"></script>
+    <script src="js/tabla.js"></script>
+    <script src="js/tabla_ventas.js"></script>
 
 </body>
 </html>
